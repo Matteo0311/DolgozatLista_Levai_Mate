@@ -11,7 +11,7 @@ namespace _3_feladat
         static void Main(string[] args)
         {
             List<int> szamok = new List<int>();
-            Random rnd = new Random();
+
             listaFeltolt(10);
 
             listaAtlag(szamok);
@@ -19,15 +19,17 @@ namespace _3_feladat
         }
 
             static List<int> listaFeltolt(int v)
-        {
-            for (int i = 0; i < 10; i++)
             {
-                int vszam = rnd.Next(10, 101);
-                szamok.Add(vszam);
-                Console.Write(vszam + " ");
+                Random rnd = new Random();
+                double vszam = 0;
+                for (int i = 0; i < v; i++)
+                {
+                    vszam = rnd.Next(10, 101);
+                    
+                }
+            Console.Write(vszam + " ");
+            return listaFeltolt;
             }
-            return v;
-        }
 
         static void listaAtlag(List<double> szamok)
         {
